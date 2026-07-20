@@ -485,6 +485,206 @@
   </div>
 </section>
 
+<section class="roadmap" id="roadmap">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow reveal">Roadmap produit · 18 mois</div>
+      <h2 class="reveal reveal-d1">Ce qui est fait, ce qui vient</h2>
+      <p class="reveal reveal-d2">De la mise en production du socle à la vision constructeur, séquencée sur 18 mois. Le périmètre couvre le back-office concessionnaire, l'espace conducteur et l'accès constructeur.</p>
+      <div class="rm-legend reveal reveal-d2">
+        <span class="rm-leg"><i class="rm-ico rm-ico--done"></i>Livré</span>
+        <span class="rm-leg"><i class="rm-ico rm-ico--wip"></i>En cours</span>
+        <span class="rm-leg"><i class="rm-ico rm-ico--todo"></i>Planifié</span>
+      </div>
+    </div>
+
+    <div class="rm-timeline">
+      <article class="rm-phase-row reveal">
+        <div class="rm-phase-side rm-phase-side--p1">
+          <span class="rm-phase-num">Phase 1</span>
+          <span class="rm-phase-date">Jan – Juin 2026</span>
+          <span class="rm-phase-state">Livré</span>
+        </div>
+        <ul class="rm-tasks">
+          <li class="is-done"><i class="rm-ico rm-ico--done"></i>Authentification JWT (access + refresh token httpOnly)</li>
+          <li class="is-done"><i class="rm-ico rm-ico--done"></i>Gestion flotte : création véhicule, décodage VIN, kilométrage</li>
+          <li class="is-done"><i class="rm-ico rm-ico--done"></i>Dashboard dealer : KPIs flotte, invitation client par email</li>
+          <li class="is-done"><i class="rm-ico rm-ico--done"></i>Dashboard conducteur : véhicule, contrat LLD, alertes</li>
+          <li class="is-done"><i class="rm-ico rm-ico--done"></i>Plan d'entretien avec date d'échéance et statut (ok / bientôt / dépassé)</li>
+          <li class="is-done"><i class="rm-ico rm-ico--done"></i>Carnet de vie (logbook) : historique des interventions</li>
+          <li class="is-done"><i class="rm-ico rm-ico--done"></i>Dépôt et lecture de factures (dealer + conducteur)</li>
+          <li class="is-done"><i class="rm-ico rm-ico--done"></i>Déploiement : Vercel (front) + Render (API) + Neon PostgreSQL</li>
+          <li class="is-done"><i class="rm-ico rm-ico--done"></i>Notifications push (VAPID) + préférences email</li>
+        </ul>
+      </article>
+
+      <article class="rm-phase-row reveal reveal-d1">
+        <div class="rm-phase-side rm-phase-side--p2">
+          <span class="rm-phase-num">Phase 2</span>
+          <span class="rm-phase-date">Juil – Oct 2026</span>
+          <span class="rm-phase-state">En cours</span>
+        </div>
+        <ul class="rm-tasks">
+          <li class="is-wip"><i class="rm-ico rm-ico--wip"></i>Espace constructeur : accès lecture flotte multi-concessionnaires</li>
+          <li class="is-wip"><i class="rm-ico rm-ico--wip"></i>Validation entretien par le conducteur (marquer comme fait)</li>
+          <li class="is-wip"><i class="rm-ico rm-ico--wip"></i>Statistiques avancées dashboard dealer</li>
+          <li class="is-todo"><i class="rm-ico rm-ico--todo"></i>Application mobile (React Native / PWA améliorée)</li>
+          <li class="is-todo"><i class="rm-ico rm-ico--todo"></i>OCR automatique sur import de factures</li>
+          <li class="is-todo"><i class="rm-ico rm-ico--todo"></i>Rappels SMS en complément des notifications push</li>
+          <li class="is-todo"><i class="rm-ico rm-ico--todo"></i>Export CSV / Excel du carnet d'entretien</li>
+          <li class="is-todo"><i class="rm-ico rm-ico--todo"></i>Signature électronique des bons d'entretien</li>
+        </ul>
+      </article>
+
+      <article class="rm-phase-row reveal reveal-d2">
+        <div class="rm-phase-side rm-phase-side--p3">
+          <span class="rm-phase-num">Phase 3</span>
+          <span class="rm-phase-date">Nov 2026 – Mars 2027</span>
+          <span class="rm-phase-state">Planifié</span>
+        </div>
+        <ul class="rm-tasks">
+          <li class="is-todo"><i class="rm-ico rm-ico--todo"></i>Intégration constructeurs : API OEM (Stellantis, Renault Group)</li>
+          <li class="is-todo"><i class="rm-ico rm-ico--todo"></i>Scoring entretien véhicule (indice de fiabilité)</li>
+          <li class="is-todo"><i class="rm-ico rm-ico--todo"></i>Revente véhicule : carnet certifié blockchain</li>
+          <li class="is-todo"><i class="rm-ico rm-ico--todo"></i>Marketplace : partenaires (assurance, pneumatiques, location)</li>
+          <li class="is-todo"><i class="rm-ico rm-ico--todo"></i>Module RH flottes entreprises : suivi conducteurs multiples</li>
+          <li class="is-todo"><i class="rm-ico rm-ico--todo"></i>Internationalisation (EN, ES, DE)</li>
+          <li class="is-todo"><i class="rm-ico rm-ico--todo"></i>Certification ISO 27001 (données véhicule)</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="business" id="business">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow reveal">Modèle économique</div>
+      <h2 class="reveal reveal-d1">Comment Flywheel génère des revenus</h2>
+      <p class="reveal reveal-d2">Un modèle SaaS multi-cibles : abonnements concessionnaires et flottes, licence constructeur, et sources de revenus complémentaires. Ci-dessous la grille tarifaire et la projection de revenus en scénario conservateur.</p>
+    </div>
+
+    <div class="biz-block">
+      <div class="pricing-grid">
+        <article class="price-card reveal">
+          <div class="price-name">Starter</div>
+          <div class="price-amount">0 €<span>/ mois</span></div>
+          <ul class="price-feats">
+            <li>1 véhicule</li>
+            <li>Dashboard conducteur</li>
+            <li>Plan d'entretien</li>
+            <li>Carnet de vie</li>
+            <li>Support email</li>
+          </ul>
+        </article>
+        <article class="price-card price-card--feat reveal reveal-d1">
+          <div class="price-name">Dealer</div>
+          <div class="price-amount">49 €<span>/ mois / concessionnaire</span></div>
+          <ul class="price-feats">
+            <li>Jusqu'à 50 véhicules</li>
+            <li>Invitation clients illimitée</li>
+            <li>Dépôt de factures</li>
+            <li>Alertes automatiques</li>
+            <li>Dashboard KPIs flotte</li>
+          </ul>
+        </article>
+        <article class="price-card reveal reveal-d2">
+          <div class="price-name">Fleet+</div>
+          <div class="price-amount">149 €<span>/ mois / parc</span></div>
+          <ul class="price-feats">
+            <li>Véhicules illimités</li>
+            <li>Multi-concessionnaires</li>
+            <li>Export CSV / API</li>
+            <li>OCR factures auto</li>
+            <li>SLA 99,9 % + support dédié</li>
+          </ul>
+        </article>
+        <article class="price-card reveal reveal-d3">
+          <div class="price-name">Marque</div>
+          <div class="price-amount price-amount--quote">Sur devis<span>/ constructeur / an</span></div>
+          <ul class="price-feats">
+            <li>Accès lecture flotte nationale</li>
+            <li>Données OEM anonymisées</li>
+            <li>Scoring entretien par modèle</li>
+            <li>Rapport CSRD automatique</li>
+            <li>Intégration API OEM</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+
+    <div class="biz-block">
+      <div class="biz-label reveal">Autres sources de revenus</div>
+      <ul class="rev-sources reveal">
+        <li>
+          <div class="rev-src-label">Commission marketplace</div>
+          <div class="rev-src-desc">2–5 % sur chaque intervention réservée via la plateforme (partenaires : garages agréés, pneumaticiens, assureurs).</div>
+        </li>
+        <li>
+          <div class="rev-src-label">Data anonymisée constructeurs</div>
+          <div class="rev-src-desc">Vente de rapports d'usage agrégés aux constructeurs pour améliorer les intervalles de maintenance recommandés.</div>
+        </li>
+        <li>
+          <div class="rev-src-label">Intégration logiciels DMS</div>
+          <div class="rev-src-desc">Module plug-in pour logiciels de gestion concessionnaire (Kerridge, CDK, PBS) : licence B2B annuelle.</div>
+        </li>
+        <li>
+          <div class="rev-src-label">Certification carnet entretien</div>
+          <div class="rev-src-desc">À terme : certification blockchain du carnet numérique pour la revente. Frais unitaires : 15–25 € / véhicule.</div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="biz-block">
+      <div class="biz-label reveal">Projection revenus · scénario conservateur</div>
+      <div class="scenario-wrap reveal">
+        <table class="rev-table">
+          <thead>
+            <tr>
+              <th></th>
+              <th>T3 2026</th>
+              <th>T4 2026</th>
+              <th>T1 2027</th>
+              <th>T2 2027</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Concessionnaires <i>(Dealer 49 €/m)</i></td>
+              <td>5</td>
+              <td>15</td>
+              <td>35</td>
+              <td>70</td>
+            </tr>
+            <tr>
+              <td>Flottes PME <i>(Fleet+ 149 €/m)</i></td>
+              <td>0</td>
+              <td>2</td>
+              <td>8</td>
+              <td>20</td>
+            </tr>
+            <tr class="rev-strong">
+              <td>MRR estimé</td>
+              <td>245 €</td>
+              <td>1 033 €</td>
+              <td>2 907 €</td>
+              <td>6 410 €</td>
+            </tr>
+            <tr class="rev-strong">
+              <td>ARR projeté</td>
+              <td>2 940 €</td>
+              <td>12 400 €</td>
+              <td>34 880 €</td>
+              <td>76 900 €</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="biz-disclaimer"><b>Point clé —</b> le modèle SaaS atteint la rentabilité dès 2 concessionnaires Dealer (2 × 49 € = 98 €/mois &gt; 71 $ de coûts d'infrastructure). Le levier de croissance est l'acquisition de réseaux (groupes de concessions) plutôt que les particuliers.</p>
+    </div>
+  </div>
+</section>
+
 <section class="cta-final" id="cta">
   <div class="wrap">
     <div class="cta-box reveal">
